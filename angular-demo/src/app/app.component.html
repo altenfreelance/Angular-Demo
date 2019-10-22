@@ -1,0 +1,13 @@
+<div class="container">
+  <!-- <h1>Angular</h1> -->
+  <!-- <app-courses></app-courses> -->
+  <!-- <app-favorite></app-favorite> -->
+  <!-- <app-titler></app-titler> -->
+  <div *ngFor="let tweet of tweets">
+
+    <app-like
+    [likesCount]='tweet.likesCount'
+    [isActive]="tweet.isLiked"></app-like>
+  </div>
+  <router-outlet></router-outlet>
+</div>

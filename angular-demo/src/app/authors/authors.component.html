@@ -1,0 +1,6 @@
+<h2> {{ authors.length }} Authors</h2>
+<ul>
+    <li *ngFor="let auth of authors">{{ auth | uppercase}}</li>
+</ul>
+<button class="btn btn-primary">Save</button>
+<app-favorite></app-favorite>
