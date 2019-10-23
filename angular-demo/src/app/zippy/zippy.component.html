@@ -1,0 +1,38 @@
+<div class="zippy">
+    <div 
+        class="zippy-heading"
+        [class.expanded]="isExpanded"
+        (click)="toggle()">
+        {{ title }}
+        
+        <span 
+        class="glyphicon"
+        [ngClass]="{
+            'glyphicon-triangle-top':!isExpanded,
+            'glyphicon-triangle-bottom':isExpanded
+        }"></span>
+    </div>
+    <div class="zippy-body" *ngIf="isExpanded">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+
+<!-- <div class="panel panel-default">
+    <div class="panel-body"
+        style="font-weight: bold;"
+        (click)="onClick()"
+    >
+        {{ title }}
+        <span 
+            class="glyphicon"
+            [ngClass]="{
+                'glyphicon-triangle-top':!isExpanded,
+                'glyphicon-triangle-bottom':isExpanded
+            }"
+            ></span>
+    </div>
+    <div  class="panel-body">
+        <ng-content></ng-content>
+    </div>
+</div> -->

@@ -11,6 +11,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { TitlerComponent } from './titler/titler.component';
 import { TitleCustomPipe } from './title-custom.pipe';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
+import { CoursesFormComponent } from './courses-form/courses-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LikeComponent } from './like/like.component';
     FavoriteComponent,
     TitlerComponent,
     TitleCustomPipe,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent,
+    CoursesFormComponent
   ],
   imports: [
     BrowserModule,
