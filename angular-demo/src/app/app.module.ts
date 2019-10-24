@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,7 @@ import { TitleCustomPipe } from './title-custom.pipe';
 import { LikeComponent } from './like/like.component';
 import { ZippyComponent } from './zippy/zippy.component';
 import { CoursesFormComponent } from './courses-form/courses-form.component';
+import { PasswordChangerComponent } from './password-changer/password-changer.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,15 @@ import { CoursesFormComponent } from './courses-form/courses-form.component';
     TitleCustomPipe,
     LikeComponent,
     ZippyComponent,
-    CoursesFormComponent
+    CoursesFormComponent,
+    PasswordChangerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     // ngModel for two way binding
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AuthorsService],
   bootstrap: [AppComponent]
