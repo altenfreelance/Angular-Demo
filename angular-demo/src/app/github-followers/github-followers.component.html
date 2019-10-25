@@ -1,0 +1,5 @@
+<div *ngFor="let follow of followers">
+    <img class="img-circle" [src]="follow.avatar_url" alt='GitHub User {{follow.login}}'>
+    <h1>{{ follow.login }}</h1>
+    <a [href]="follow.url">{{ follow.url }}</a>
+</div>
